@@ -1,20 +1,14 @@
-const { createRouter, createWebHashHistory } = require('vue-router')
-
-const history = createWebHashHistory()
+import { createRouter, createWebHashHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history,
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
       name: 'home',
-      component: () => import('../views/home.vue')
-    },
-    {
-      path: '/:pathMatch(.*)*',
-      name: 'notFound',
-      component: () => import('../views/404.vue')
-    },
+      component: HomeView
+    }
   ]
 })
 

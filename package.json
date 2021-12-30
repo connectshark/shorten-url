@@ -1,48 +1,21 @@
 {
   "name": "shorten-url",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --modern",
-    "lint": "vue-cli-service lint"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 5050"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "clipboardy": "^2.3.0",
-    "core-js": "^3.15.1",
-    "node-sass": "^5.0.0",
-    "sass-loader": "^10.2.0",
-    "vue": "^3.1.2",
-    "vue-router": "^4.0.10",
-    "vuex": "^4.0.2"
+    "pinia": "^2.0.9",
+    "vue": "^3.2.26",
+    "vue-router": "^4.0.12"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^4.5.13",
-    "@vue/cli-plugin-eslint": "^4.5.13",
-    "@vue/cli-service": "^4.5.13",
-    "@vue/compiler-sfc": "^3.1.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-vue": "^7.12.1"
-  },
-  "eslintConfig": {
-    "root": true,
-    "env": {
-      "node": true
-    },
-    "extends": [
-      "plugin:vue/vue3-essential",
-      "eslint:recommended"
-    ],
-    "parserOptions": {
-      "parser": "babel-eslint"
-    },
-    "rules": {}
-  },
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ]
+    "@vitejs/plugin-vue": "^2.0.1",
+    "autoprefixer": "^10.4.1",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.8",
+    "vite": "^2.7.7"
+  }
 }
