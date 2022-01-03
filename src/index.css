@@ -1,3 +1,69 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg {
+  background-color: #a8edea;
+  background-image:
+    radial-gradient(closest-side, #fbc2ebff, #fbc2eb00),
+    radial-gradient(closest-side, #a6c1eeff, #a6c1ee00),
+    radial-gradient(closest-side, #fccb90ff, #fccb9000),
+    radial-gradient(closest-side, #d57eebff, #d57eeb00),
+    radial-gradient(closest-side, #e0c3fcff, #8ec5fc00);
+  background-size:
+    130vmax 130vmax,
+    80vmax 80vmax,
+    90vmax 90vmax,
+    110vmax 110vmax,
+    90vmax 90vmax;
+  background-position:
+    -80vmax -80vmax,
+    60vmax -30vmax,
+    10vmax 10vmax,
+    -30vmax -10vmax,
+    50vmax 50vmax;
+  background-repeat: no-repeat;
+  animation: move 10s infinite alternate;
+}
+
+@keyframes move {
+  0%{
+    background-position:
+      -80vmax -80vmax,
+      60vmax -30vmax,
+      10vmax 10vmax,
+      -30vmax -10vmax,
+      50vmax 50vmax;
+  }
+  50%{
+    background-size:
+      140vmax 140vmax,
+      70vmax 90vmax,
+      90vmax 80vmax,
+      130vmax 120vmax,
+      100vmax 100vmax;
+    background-position:
+      -60vmax -90vmax,
+      50vmax -40vmax,
+      0vmax -20vmax,
+      -40vmax 10vmax,
+      30vmax 60vmax;
+  }
+  100%{
+    background-size:
+      80vmax 80vmax,
+      120vmax 120vmax,
+      60vmax 60vmax,
+      130vmax 130vmax,
+      120vmax 120vmax;
+    background-position:
+      -50vmax -70vmax,
+      40vmax -30vmax,
+      10vmax 00vmax,
+      20vmax 50vmax,
+      40vmax 70vmax;
+  }
+}
+.transparent{
+  background-color: #ffffffaa;
+}
