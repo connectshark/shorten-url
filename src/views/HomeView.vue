@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import copy from 'copy-text-to-clipboard'
 
-const url = ref('https://webgradients.com/')
+const url = ref('')
 const loading = ref(false)
 const response = ref({})
 const copyState = ref(false)
