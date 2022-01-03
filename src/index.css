@@ -64,6 +64,7 @@
       40vmax 70vmax;
   }
 }
-.transparent{
-  background-color: #ffffffaa;
+
+.btn{
+  @apply  mx-2 inline-block transition text-white py-2 px-4 rounded-lg hover:font-bold cursor-pointer
 }
